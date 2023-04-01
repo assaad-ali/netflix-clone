@@ -5,7 +5,7 @@ const Navbar = () => {
     <div class="navbar">
         <div className="container">
             <div className="left">
-                <img src="https://commons.wikimedia.org/wiki/File:Netflix_2015_logo.svg#/media/File:Netflix_logo.svg" alt="logo img" class="logo" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" />
                 <span>Homepage</span>
                 <span>Series</span>
                 <span>Movies</span>

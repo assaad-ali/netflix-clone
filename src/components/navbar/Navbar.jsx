@@ -1,4 +1,7 @@
 import "./navbar.scss";
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import SearchIcon from '@mui/icons-material/Search';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Navbar = () => {
   return (
@@ -12,7 +15,13 @@ const Navbar = () => {
                 <span>New and Popular</span>
                 <span>My List</span>
             </div>
-
+            <div className="right">
+              <SearchIcon/>
+              <span>KID</span>
+              <NotificationsNoneIcon/>
+              <img src="https://avatars.githubusercontent.com/u/6759280?v=4" alt="profile" />
+              <ArrowDropDownIcon/>
+            </div>
         </div>
     </div>
   )

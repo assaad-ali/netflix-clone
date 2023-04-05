@@ -1,4 +1,5 @@
 import './featured.scss'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 function Featured() {
   return (
@@ -17,7 +18,11 @@ function Featured() {
                 voluptates ab, doloremque fuga aliquid, praesentium optio 
                 eum a consequatur natus ipsam doloribus aperiam!
             </span>
-            
+            <div className="buttons">
+                <button className="play">
+                    <PlayArrowIcon/>
+                </button>
+            </div>
         </div>
 
     </div>

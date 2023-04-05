@@ -21,7 +21,6 @@
 
         .right{
             display: flex;
-            align-items: center;
 
 
             img{
@@ -30,6 +29,21 @@
                 border-radius: 5px;
                 object-fit: cover;
             }
+            
+            .profile{
+
+                .options{
+                    display: none;
+                }
+                &:hover{
+                    .options{
+                    display: flex;
+                    flex-direction: column;
+                    position:relative;
+                }
+                }
+            }
+
         }
     }
 

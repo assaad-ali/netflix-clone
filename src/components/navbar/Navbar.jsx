@@ -18,9 +18,18 @@ const Navbar = () => {
             <div className="right">
               <SearchIcon/>
               <span>KID</span>
-              <NotificationsNoneIcon/>
-              <img src="https://avatars.githubusercontent.com/u/6759280?v=4" alt="profile" />
-              <ArrowDropDownIcon/>
+              <NotificationsNoneIcon className="icon"/>
+              <img 
+              src="https://avatars.githubusercontent.com/u/6759280?v=4" 
+              alt="profile-pic" 
+              />
+              <div className="profile">
+                <ArrowDropDownIcon className="icon"/>
+                <div className="options">
+                  <span>Settings</span>
+                  <span>Logout</span>
+                </div>
+              </div>
             </div>
         </div>
     </div>

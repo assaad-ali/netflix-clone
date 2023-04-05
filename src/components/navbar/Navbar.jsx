@@ -16,7 +16,7 @@ const Navbar = () => {
                 <span>My List</span>
             </div>
             <div className="right">
-              <SearchIcon/>
+              <SearchIcon  className="icon"/>
               <span>KID</span>
               <NotificationsNoneIcon className="icon"/>
               <img 

@@ -1,6 +1,15 @@
 .navbar{
+    width: 100%;
     color: white;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 0%, 0.7) 100% );
+
+    &.scrolled {
+        background-color: var(--main-color);
+    }
 
     .container{
         padding: 0px 10px;
@@ -54,6 +63,10 @@
                     flex-direction: column;
                     position:absolute;
                 }
+                }
+                span{
+                    padding: 10px;
+                    cursor: pointer;
                 }
                 
             }

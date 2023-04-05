@@ -1,5 +1,6 @@
 import './featured.scss'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 function Featured() {
   return (
@@ -21,6 +22,9 @@ function Featured() {
             <div className="buttons">
                 <button className="play">
                     <PlayArrowIcon/>
+                </button>
+                <button className="more-info">
+                    <InfoOutlinedIcon/>
                 </button>
             </div>
         </div>

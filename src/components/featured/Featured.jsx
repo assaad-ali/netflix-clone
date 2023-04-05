@@ -7,7 +7,7 @@ function Featured() {
     <div className='featured'>
         <img 
 
-          src="https://media.wdwnt.com/2020/06/299579-featured.jpg" 
+          src="https://i0.wp.com/batman-news.com/wp-content/uploads/2022/01/The-Batman-2022-Movie-Poster-Featured-01.webp?resize=1536%2C864&quality=80&strip=info&ssl=1" 
           alt="" 
         />
 
@@ -22,9 +22,11 @@ function Featured() {
             <div className="buttons">
                 <button className="play">
                     <PlayArrowIcon/>
+                    <span>Play</span>
                 </button>
                 <button className="more-info">
                     <InfoOutlinedIcon/>
+                    <span>Info</span>
                 </button>
             </div>
         </div>

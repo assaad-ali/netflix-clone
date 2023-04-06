@@ -1,7 +1,20 @@
 import './list.scss'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export const List = () => {
   return (
-    <div>List</div>
+    <div className='list'>
+        <span className="listTitle">Continue to watch</span>
+        <div className="wrapper">
+            <ArrowBackIosIcon/>
+            <div className="container">
+                
+            </div>
+            <ArrowForwardIosIcon/>
+        </div>
+
+
+    </div>
   )
 }

@@ -9,11 +9,26 @@ export const List = () => {
     <div className='list'>
         <span className="listTitle">Continue to watch</span>
         <div className="wrapper">
-            <ArrowBackIosIcon/>
+            <ArrowBackIosIcon className='sliderArrow left'/>
             <div className="container">
                 <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
+                <ListItem/>
             </div>
-            <ArrowForwardIosIcon/>
+            <ArrowForwardIosIcon className='sliderArrow right'/>
         </div>
 
 

@@ -2,17 +2,20 @@ import './list.scss'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ListItem from '../listItem/ListItem';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 
 export const List = () => {
     
+    const[slideNumber, setSlideNumber] = useState(0);
+
     const listRef = useRef()
 
     const handleClick = (direction) => {
         let distance = listRef.current.getBoundingClientRect().x - 50;
 
-        if(direction === "left"){
+        if(direction === "left" && slideNumber > 0){
+            setSlideNumber(slideNumber - 1)
             listRef.current.style.transform = `translateX(${distance + 230}px)`
         }
         if(direction === "right"){

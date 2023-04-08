@@ -18,7 +18,8 @@ export const List = () => {
             setSlideNumber(slideNumber - 1)
             listRef.current.style.transform = `translateX(${distance + 230}px)`
         }
-        if(direction === "right"){
+        if(direction === "right" && slideNumber < 5){
+            setSlideNumber(slideNumber + 1)
             listRef.current.style.transform = `translateX(${distance - 230}px)`
         }
     }
@@ -29,6 +30,8 @@ export const List = () => {
         <div className="wrapper">
             <ArrowBackIosIcon className='sliderArrow left' onClick= {() => handleClick("left")}/>
             <div className="container" ref={listRef}>
+                <ListItem/>
+                <ListItem/>
                 <ListItem/>
                 <ListItem/>
                 <ListItem/>

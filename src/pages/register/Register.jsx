@@ -3,12 +3,18 @@ import './register.scss'
 
 export const Register = () => {
 
-    const [email, setEmail] = useState("")
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const emailRef = useRef()
+    const passwordRef = useRef()
 
     const handleRegister = ()=>{
         setEmail(emailRef.current.value)
+    }
+
+    const handleFinish = ()=>{
+        setPassword(passwordRef.current.value)
     }
 
   return (
@@ -29,10 +35,18 @@ export const Register = () => {
             <p>
                 Ready to watch? Enter your email to create new account or restart your membership.
             </p>
-            <div className="input">
+            {!email ? (
+                <div className="input">
                 <input type="email" placeholder='Enter your e-mail address here' ref={emailRef}/>
                 <button className='registerButton' onClick={handleRegister}>Get Started</button>
             </div>
+            ) : (
+            <div className="input">
+            <input type="password" placeholder='Enter your password here' ref={passwordRef}/>
+            <button className='registerButton' onClick={handleFinish}>Start Membership</button>
+        </div>
+        )}
+            
         </div>
     </div>
   )

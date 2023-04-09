@@ -27,10 +27,10 @@ const ListItem = ({index}) => {
                 title='Game of Thrones'
                 src="https://player.vimeo.com/video/231693022?h=9aef0905a8&autoplay=1&loop=1&portrait=0" 
                 frameBorder="0" 
-                allow="autoplay;`"
+                allow="autoplay"
                 >
                 </iframe>
-                <script src="https://player.vimeo.com/api/player.js"></script>
+
                 <div className="itemInfo">
                     <div className="icons">
                         <PlayArrowIcon className="icon"/>

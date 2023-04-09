@@ -32,25 +32,25 @@ const ListItem = ({index}) => {
                 </iframe>
                 <script src="https://player.vimeo.com/api/player.js"></script>
                 <div className="itemInfo">
-                <div className="icons">
-                    <PlayArrowIcon />
-                    <AddIcon />
-                    <ThumbUpIcon />
-                    <ThumbDownIcon />
-                </div>
-                <div className="itemInfoTop">
-                    <span>1hour 40mins</span>
-                    <span className="age">+16</span>
-                    <span>2001</span>
+                    <div className="icons">
+                        <PlayArrowIcon className="icon"/>
+                        <AddIcon className="icon"/>
+                        <ThumbUpIcon className="icon"/>
+                        <ThumbDownIcon className="icon"/>
+                    </div>
+                    <div className="itemInfoTop">
+                        <span>1hour 40mins</span>
+                        <span className="age">+16</span>
+                        <span>2001</span>
 
+                    </div>
+                    <div className="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim mollitia eius cum rerum, ducimus ad delectus in,
+                        doloremque officiis soluta ratione.
+                    </div>
+                    <div className="genre">Thriller</div>
                 </div>
-                <div className="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim mollitia eius cum rerum, ducimus ad delectus in,
-                    doloremque officiis soluta ratione.
-                </div>
-                <div className="genre">Thriller</div>
-            </div>
 
             </>
                 )}

@@ -10,7 +10,6 @@ const ListItem = ({index}) => {
 
     const [isHovered, setIsHovered] = useState(false);
 
-
     return (
         <div
             className='listItem'
@@ -21,7 +20,18 @@ const ListItem = ({index}) => {
             <img src='https://pyxis.nymag.com/v1/imgs/4d1/dcf/a33209cb40d7dbd980ba6cdceddc56b0f6-got-poster-s8-2.2x.rhorizontal.w700.jpg'
                 alt=''
             />
-            <div className="itemInfo">
+
+            {isHovered && (
+            <>
+                <iframe 
+                title='Game of Thrones'
+                src="https://player.vimeo.com/video/231693022?h=9aef0905a8&autoplay=1&loop=1&portrait=0" 
+                frameBorder="0" 
+                allow="autoplay;`"
+                >
+                </iframe>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <div className="itemInfo">
                 <div className="icons">
                     <PlayArrowIcon />
                     <AddIcon />
@@ -41,6 +51,9 @@ const ListItem = ({index}) => {
                 </div>
                 <div className="genre">Thriller</div>
             </div>
+
+            </>
+                )}
         </div>
 
     )

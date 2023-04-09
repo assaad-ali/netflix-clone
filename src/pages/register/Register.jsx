@@ -1,6 +1,16 @@
+import { useRef, useState} from 'react'
 import './register.scss'
 
 export const Register = () => {
+
+    const [email, setEmail] = useState("")
+
+    const emailRef = useRef()
+
+    const handleRegister = ()=>{
+        setEmail(emailRef.current.value)
+    }
+
   return (
     <div className='register'>
         <div className="top">
@@ -20,8 +30,8 @@ export const Register = () => {
                 Ready to watch? Enter your email to create new account or restart your membership.
             </p>
             <div className="input">
-                <input type="email" placeholder='Enter your e-mail address here' />
-                <button className='registerButton'>Get Started</button>
+                <input type="email" placeholder='Enter your e-mail address here' ref={emailRef}/>
+                <button className='registerButton' onClick={handleRegister}>Get Started</button>
             </div>
         </div>
     </div>
